@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.auditoria/
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+.vercel/
+.vercel
+
+# Documentos internos (ficam só na máquina)
+CLAUDE.md
+KIT.md
+design-system.md
+tres amores/
+.claude/
