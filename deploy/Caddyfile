@@ -1,0 +1,12 @@
+# Bloco do cliente no Caddy da VPS (/srv/caddy/sites/tres-amores.caddy), enviado pelo /deploy-vps.
+brechotresamores.com.br {
+	encode zstd gzip
+	request_body {
+		max_size 1MB
+	}
+	reverse_proxy tres-amores:3000
+}
+
+www.brechotresamores.com.br {
+	redir https://brechotresamores.com.br{uri} permanent
+}

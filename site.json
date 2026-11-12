@@ -1,7 +1,34 @@
 {
+  "cliente": "tres-amores",
   "nome": "Três Amores Brechó Infantil",
   "status": "desenvolvimento",
-  "local": { "cidade": "Passo Fundo", "uf": "RS" },
+  "local": {
+    "cidade": "Passo Fundo",
+    "uf": "RS"
+  },
   "dominio": "brechotresamores.com.br",
-  "preview": "tres-amores.vercel.app"
+  "preview": "tres-amores.vercel.app",
+  "repo": "DouglasVilanova/tres-amores",
+  "infra": {
+    "hospedagem": "vps",
+    "vps": "villa-vps",
+    "pasta_vps": "/srv/sites/tres-amores",
+    "container": "tres-amores",
+    "caddy": "/srv/caddy/sites/tres-amores.caddy",
+    "supabase_ref": null,
+    "supabase_regiao": null,
+    "dns": "registro.br",
+    "email": "sem e-mail (MX nulo, SPF -all) em 12/11/2026",
+    "deploy": {
+      "dockerfile": "deploy/Dockerfile",
+      "porta": 3000,
+      "build_args_env": [],
+      "build_args": {
+        "NEXT_PUBLIC_SITE_URL": "https://brechotresamores.com.br"
+      },
+      "compose": "deploy/docker-compose.yml",
+      "caddy": "deploy/Caddyfile",
+      "env": true
+    }
+  }
 }

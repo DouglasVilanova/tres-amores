@@ -14,6 +14,8 @@ const headersSeguranca = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Imagem Docker da VPS (deploy/Dockerfile) usa o servidor standalone.
+  output: process.env.NEXT_STANDALONE ? "standalone" : undefined,
   images: { unoptimized: true },
   async headers() {
     return [{ source: "/:path*", headers: headersSeguranca }];

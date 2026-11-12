@@ -1,0 +1,17 @@
+# Produção na VPS: /srv/sites/tres-amores/docker-compose.yml (enviado pelo /deploy-vps a partir de deploy/).
+# Segredos em /srv/sites/tres-amores/.env (600, nunca no git). Sem porta publicada: só o Caddy fala com o site,
+# pela rede própria rede-tres-amores (um site não enxerga outro).
+services:
+  site:
+    image: tres-amores:${VERSAO:-atual}
+    container_name: tres-amores
+    env_file: .env
+    restart: unless-stopped
+    networks: [rede-tres-amores]
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 256
+
+networks:
+  rede-tres-amores:
+    external: true
