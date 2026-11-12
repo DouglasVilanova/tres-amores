@@ -1,13 +1,13 @@
 {
   "cliente": "tres-amores",
   "nome": "Três Amores Brechó Infantil",
-  "status": "desenvolvimento",
+  "status": "online",
   "local": {
     "cidade": "Passo Fundo",
     "uf": "RS"
   },
   "dominio": "brechotresamores.com.br",
-  "preview": "tres-amores.vercel.app",
+  "preview": "",
   "repo": "DouglasVilanova/tres-amores",
   "infra": {
     "hospedagem": "vps",

@@ -11,12 +11,12 @@ npm install
 npm run dev
 ```
 
-## Variáveis de ambiente
+## Atendimento
 
-Ver `.env.example`. O chatbot (`/api/chat`) precisa de `ANTHROPIC_API_KEY`; sem ela, o
-widget leva a pessoa para o WhatsApp.
+O botão "Tirar uma dúvida" é um menu de perguntas com respostas prontas, montadas a partir do
+conteúdo do site (`lib/chat-topicos.ts`). Sem IA e sem chave de API; o resto vai para o WhatsApp.
 
 ## Publicar
 
-Deploy na Vercel. Enquanto `site.json` estiver com `status: "desenvolvimento"`, o site não é
+Docker na VPS (`deploy/`). Enquanto `site.json` estiver com `status: "desenvolvimento"`, o site não é
 indexado. Para publicar no domínio final, trocar para `"online"`.

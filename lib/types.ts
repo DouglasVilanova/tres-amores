@@ -37,7 +37,7 @@ export type SiteSettings = {
     instagram: string;
     facebook: string;
   };
-  chat: { ativo: boolean; nome: string; saudacao: string; sugestoes: string[] };
+  chat: { ativo: boolean; nome: string; saudacao: string };
   seo: { titulo: string; descricao: string; googleVerification: string; head: string; bodyStart: string };
   visibilidade: { numeros: boolean; categorias: boolean; consignacao: boolean; sobre: boolean; faq: boolean };
 };

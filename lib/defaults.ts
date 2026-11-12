@@ -90,15 +90,14 @@ export const SITE_DEFAULTS: SiteSettings = {
   },
   chat: {
     ativo: true,
-    nome: "Assistente Três Amores",
-    saudacao: "Oi! Sou a assistente virtual do Três Amores. Posso te explicar como desapegar, o que tem na loja ou nosso horário.",
-    sugestoes: ["Como funciona o desapego?", "Qual o horário da loja?", "Vocês têm indumentária gaúcha?"],
+    nome: "Atendimento Três Amores",
+    saudacao: "Oi! Que bom te ver por aqui. Escolha um assunto abaixo ou fale direto com a equipe no WhatsApp.",
   },
   seo: {
     titulo: "Três Amores Brechó Infantil | Passo Fundo",
     descricao:
       "Brechó infantil em Passo Fundo: roupas, calçados, brinquedos e enxoval de 0 a 14 anos. Desapegue em consignação e acompanhe seu saldo pelo celular.",
-    googleVerification: "",
+    googleVerification: "a4luEhIZyZm1ehZmk8383yqmAJpaK4GR3F07KegZQpI",
     head: "",
     bodyStart: "",
   },
